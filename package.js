@@ -4,7 +4,7 @@ Package.describe({
 	name: 'uploadcare:uploadcare-widget',
 	version: '1.0.0',
 	summary: '',
-	git: '',
+	git: 'https://github.com/uploadcare/meteor-uploadcare-widget.git',
 	documentation: 'README.md'
 });
 
