@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "jquery": {
+      "version": "3.1.0",
+      "resolved": "https://registry.npmjs.org/jquery/-/jquery-3.1.0.tgz",
+      "from": "jquery@>=1.10.2"
+    },
+    "uploadcare-widget": {
+      "version": "2.9.0",
+      "resolved": "https://registry.npmjs.org/uploadcare-widget/-/uploadcare-widget-2.9.0.tgz",
+      "from": "uploadcare-widget@2.9.0"
+    }
+  }
+}

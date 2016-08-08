@@ -9,13 +9,13 @@ Package.describe({
 })
 
 Package.onUse(function(api) {
-	api.use('ecmascript')
+	api.use('ecmascript@0.5.7')
 	api.mainModule('uploadcare-widget.js', 'client')
 })
 
 Package.onTest(function(api) {
-	api.use('ecmascript')
-	api.use('tinytest')
+	api.use('ecmascript@0.5.7')
+	api.use('tinytest@1.0.11')
 	api.use('uploadcare:uploadcare-widget')
 	api.mainModule('uploadcare-widget-tests.js', 'client')
 })
