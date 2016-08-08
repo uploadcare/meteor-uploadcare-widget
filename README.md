@@ -1,5 +1,5 @@
 # meteor-uploadcare-widget
-[Uploadcare widget](https://uploadcare.com/documentation/widget/) wrapped into a Meteor package.
+Official Meteor package for [Uploadcare widget](https://uploadcare.com/documentation/widget/).
 
 ## Install
 
