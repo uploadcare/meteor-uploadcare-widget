@@ -1,9 +1,9 @@
-import uploadcare from 'uploadcare-widget';
+import uploadcare from 'uploadcare-widget'
 
-const meteorUploadcareSettings = ((Meteor.settings || {}).public || {}).uploadcare || {};
+const meteorUploadcareSettings = ((Meteor.settings || {}).public || {}).uploadcare || {}
 
 if (!!meteorUploadcareSettings) {
-	uploadcare.start(meteorUploadcareSettings);
+	uploadcare.start(meteorUploadcareSettings)
 }
 
-export default uploadcare;
+export default uploadcare
