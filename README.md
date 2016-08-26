@@ -1,5 +1,5 @@
 # meteor-uploadcare-widget
-Official Meteor package for [Uploadcare widget](https://uploadcare.com/documentation/widget/).
+The official Meteor package for [Uploadcare widget](https://uploadcare.com/documentation/widget/).
 
 ## Install
 
@@ -13,11 +13,11 @@ meteor add uploadcare:uploadcare-widget
 
 Set your [public key](https://uploadcare.com/documentation/keys/).
 
-You can use Meteor application settings for set public key.
+You can use [Meteor application settings](https://guide.meteor.com/deployment.html#environment) for set the public key.
 
-Add `uploadcare` object to `public` part of settings.
+Add `uploadcare` to settings under a special key called `public`, it will be available on the client.
 
-`settings.json` file:
+For example, `settings.json` file:
 
 ```json
 {
@@ -29,7 +29,7 @@ Add `uploadcare` object to `public` part of settings.
 }
 ```
 
-Run application with settings:
+Run application with settings file:
 
 ```
 meteor --settings settings.json
@@ -50,13 +50,13 @@ The library looks for inputs with special `role` attribute, and places widgets t
 
 ## Configuration
 
-Widget is highly customizable through widget options. You can check out the [configuration page](https://uploadcare.com/widget/configure/) to see some of them in action.
+The widget is highly customizable through widget options. You can check out the [configuration page](https://uploadcare.com/widget/configure/) to see some of them in action.
 
-There are two ways to set widget options. Global options are set when page loads, local every time when new widget is created. Changing any options during widget operation won't affect the widget.
+There are two ways to set widget options. Global options are set when page loads, local every time when the new widget is created. Changing any options during widget operation won't affect the widget.
 
 ### Global variables
 
-Specified as global Meteor settings in a `settings.json` file, for example:
+Specified as global Meteor settings, for example in a `settings.json` file:
 
 ```json
 {
@@ -102,9 +102,11 @@ import uploadcare from 'meteor/uploadcare:uploadcare-widget'
 ```
 
 ```javascript
-widget.onUploadComplete(function(info) {
+let widget = uploadcare.Widget('[role=uploadcare-uploader]')
+
+widget.onUploadComplete((info) => {
   // Handle uploaded file info.
-});
+})
 ```
 
 
