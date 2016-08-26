@@ -1,21 +1,21 @@
-Npm.depends({'uploadcare-widget': '2.9.0'})
+Npm.depends({'uploadcare-widget': '2.10.0'})
 
 Package.describe({
 	name: 'uploadcare:uploadcare-widget',
-	version: '1.0.0',
+	version: '1.1.0',
 	summary: 'Official Meteor package for Uploadcare widget',
 	git: 'https://github.com/uploadcare/meteor-uploadcare-widget.git',
 	documentation: 'README.md',
 })
 
 Package.onUse(function(api) {
-	api.use('ecmascript@0.5.7')
+	api.use('ecmascript')
 	api.mainModule('uploadcare-widget.js', 'client')
 })
 
 Package.onTest(function(api) {
-	api.use('ecmascript@0.5.7')
-	api.use('tinytest@1.0.11')
+	api.use('ecmascript')
+	api.use('tinytest')
 	api.use('uploadcare:uploadcare-widget')
 	api.mainModule('uploadcare-widget-tests.js', 'client')
 })
