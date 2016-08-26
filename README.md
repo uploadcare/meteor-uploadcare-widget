@@ -109,5 +109,7 @@ widget.onUploadComplete((info) => {
 })
 ```
 
+## Demo
 
+[See demo source](https://github.com/uploadcare/meteor-uploadcare-widget-demo).
 
