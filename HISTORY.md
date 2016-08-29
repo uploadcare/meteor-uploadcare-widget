@@ -1,5 +1,9 @@
 # History
 
+## 1.1.1, 29.08.2016
+
+- Add api.versionsFrom
+
 ## 1.1.0, 26.08.2016
 
 - Bump uploadcare-widget to 2.10.0
