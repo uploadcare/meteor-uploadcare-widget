@@ -9,6 +9,7 @@ Package.describe({
 })
 
 Package.onUse(function(api) {
+	api.versionsFrom('1.3.2')
 	api.use('ecmascript')
 	api.mainModule('uploadcare-widget.js', 'client')
 })
