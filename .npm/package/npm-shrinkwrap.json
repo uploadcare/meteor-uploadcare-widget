@@ -7,7 +7,7 @@
     },
     "uploadcare-widget": {
       "version": "2.10.1",
-      "resolved": "https://registry.npmjs.org/uploadcare-widget/-/uploadcare-widget-2.10.0.tgz",
+      "resolved": "https://registry.npmjs.org/uploadcare-widget/-/uploadcare-widget-2.10.1.tgz",
       "from": "uploadcare-widget@2.10.1"
     }
   }
