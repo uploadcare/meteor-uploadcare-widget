@@ -1,4 +1,4 @@
-Npm.depends({'uploadcare-widget': '2.10.0'})
+Npm.depends({'uploadcare-widget': '2.10.1'})
 
 Package.describe({
 	name: 'uploadcare:uploadcare-widget',
