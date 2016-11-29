@@ -1,5 +1,6 @@
 # meteor-uploadcare-widget
-The official Meteor package for [Uploadcare widget](https://uploadcare.com/documentation/widget/).
+The official Meteor package for the
+[Uploadcare widget](https://uploadcare.com/documentation/widget/).
 
 ## Install
 
@@ -11,11 +12,14 @@ meteor add uploadcare:uploadcare-widget
 
 ### Public key
 
-Set your [public key](https://uploadcare.com/documentation/keys/).
+Discover your Uploadcare
+[public key](https://uploadcare.com/documentation/keys/)
+and use [Meteor application settings](https://guide.meteor.com/deployment.html#environment)
+to set the key for Meteor.
 
-You can use [Meteor application settings](https://guide.meteor.com/deployment.html#environment) for set the public key.
-
-Add `uploadcare` to settings under a special key called `public`, it will be available on the client.
+Add `uploadcare` to your settings under a
+`public` key, this will make Uploadcare settings
+available for your Meteor client.
 
 For example, `settings.json` file:
 
@@ -29,7 +33,8 @@ For example, `settings.json` file:
 }
 ```
 
-Run application with settings file:
+Run Meteor application with `settings.json`
+as settings file:
 
 ```
 meteor --settings settings.json
@@ -37,26 +42,41 @@ meteor --settings settings.json
 
 ### HTML element
 
-Place following `input` element somewhere in your templates.
+Place the following `input` element somewhere
+into your templates.
 
 ```html
 <input type="hidden" role="uploadcare-uploader" name="my_file" />
 ```
 
-This is where the widget will be. Don't forget the name attribute!
+Don't forget to type in the `name` attribute —
+this is a path to your widget.
 
-The library looks for inputs with special `role` attribute, and places widgets there. As soon as the file is uploaded, this `input` will receive CDN link with file UUID.
+The library looks for inputs with the `role` attribute,
+and places widgets there. 
+As soon as a file gets uploaded, that `input` receives
+a CDN link with file UUID.
 
 
 ## Configuration
 
-The widget is highly customizable through widget options. You can check out the [configuration page](https://uploadcare.com/widget/configure/) to see some of them in action.
+The widget is highly customizable through widget options.
+You might want to check out the 
+[configuration page](https://uploadcare.com/widget/configure/)
+to see some of them in action.
 
-There are two ways to set widget options. Global options are set when page loads, local every time when the new widget is created. Changing any options during widget operation won't affect the widget.
+There are two ways to set widget options,
+
+* Global options are set when a page loads.
+* Local options — every time a new widget is created.
+
+Please note, changing any options during widget operation
+won't affect its behavior.
 
 ### Global variables
 
-Specified as global Meteor settings, for example in a `settings.json` file:
+Global variables are specified as
+global Meteor settings. For example, in a `settings.json` file:
 
 ```json
 {
@@ -69,7 +89,8 @@ Specified as global Meteor settings, for example in a `settings.json` file:
 }
 ```
 
-On second way, specified as global JavaScript variables in a `<script>` tag, for example:
+Another way to specify those is through
+global JavaScript variables within a `<script>` tag, like here,
 
 ```html
 <script>
@@ -80,7 +101,8 @@ On second way, specified as global JavaScript variables in a `<script>` tag, for
 
 ### Local attributes
 
-Specified in the target `<input>` tag as `data-*` attributes, for example:
+Local attributes are specified in
+the target `<input>` tag as `data-*` attributes, for example,
 
 ```html
 <input
@@ -93,7 +115,16 @@ Specified in the target `<input>` tag as `data-*` attributes, for example:
 
 ## JavaScript API
 
-You may not need all of the features that [our widget](https://uploadcare.com/documentation/widget/) exhibits. Or, perhaps, you want to redesign the user experience, but don't want to reinvent the wheel. Or the task is simply to build some UI on top of the widget. For all these use cases we provide a [JavaScript API](https://uploadcare.com/documentation/javascript_api/). Use it to control the default widget, or do stuff without it via standalone components that can be combined with your own solutions.
+You might not want to use all the features that
+[our widget](https://uploadcare.com/documentation/widget/) exhibits.
+Or, perhaps, you might want to redesign the user experience
+without having to reinvent the wheel.
+Maybe, you're in pursuit of building a UI on top of the widget.
+For all of those use cases, we provide a 
+[JavaScript API](https://uploadcare.com/documentation/javascript_api/).
+Feel free to control the default widget with it,
+or make use of its standalone components that
+can be combined with your own solutions.
 
 ### Use JavaScript API in Meteor app
 
@@ -105,11 +136,15 @@ import uploadcare from 'meteor/uploadcare:uploadcare-widget'
 let widget = uploadcare.Widget('[role=uploadcare-uploader]')
 
 widget.onUploadComplete((info) => {
-  // Handle uploaded file info.
+  // Handle an uploaded file info.
 })
 ```
 
 ## Demo
 
-[See demo source](https://github.com/uploadcare/meteor-uploadcare-widget-demo).
+[See our demo source](https://github.com/uploadcare/meteor-uploadcare-widget-demo).
+
+## Contributors
+
+Current maintainer — [@Zmoki](https://github.com/Zmoki).
 
