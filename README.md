@@ -48,9 +48,10 @@ into your templates.
 ```html
 <input type="hidden" role="uploadcare-uploader" name="my_file" />
 ```
-
-Don't forget to type in the `name` attribute —
-this is a path to your widget.
+By inserting the line you define where the widget
+will be positioned on a page.
+Don't forget about the `name` attribute to
+further fine-tune your elements behavior.
 
 The library looks for inputs with the `role` attribute,
 and places widgets there. 
