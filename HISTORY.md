@@ -1,5 +1,7 @@
 # History
 
+- Bump uploadcare-widget to 2.10.2
+
 ## 1.1.2, 24.10.2016
 
 - Bump uploadcare-widget to 2.10.1

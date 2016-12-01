@@ -6,9 +6,9 @@
       "from": "jquery@>=1.10.2 <3.0.0"
     },
     "uploadcare-widget": {
-      "version": "2.10.1",
-      "resolved": "https://registry.npmjs.org/uploadcare-widget/-/uploadcare-widget-2.10.1.tgz",
-      "from": "uploadcare-widget@2.10.1"
+      "version": "2.10.2",
+      "resolved": "https://registry.npmjs.org/uploadcare-widget/-/uploadcare-widget-2.10.2.tgz",
+      "from": "uploadcare-widget@2.10.2"
     }
   }
 }
