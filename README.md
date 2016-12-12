@@ -147,5 +147,4 @@ widget.onUploadComplete((info) => {
 
 ## Contributors
 
-Current maintainer — [@Zmoki](https://github.com/Zmoki).
-
+* [@Zmoki](https://github.com/Zmoki)
