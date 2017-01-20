@@ -1,4 +1,7 @@
 # meteor-uploadcare-widget
+
+[![Build Status](https://travis-ci.org/uploadcare/meteor-uploadcare-widget.svg?branch=master)](https://travis-ci.org/uploadcare/meteor-uploadcare-widget)
+
 The official Meteor package for the
 [Uploadcare widget](https://uploadcare.com/documentation/widget/).
 
@@ -54,7 +57,7 @@ Don't forget about the `name` attribute to
 further fine-tune your elements behavior.
 
 The library looks for inputs with the `role` attribute,
-and places widgets there. 
+and places widgets there.
 As soon as a file gets uploaded, that `input` receives
 a CDN link with file UUID.
 
@@ -62,7 +65,7 @@ a CDN link with file UUID.
 ## Configuration
 
 The widget is highly customizable through widget options.
-You might want to check out the 
+You might want to check out the
 [configuration page](https://uploadcare.com/widget/configure/)
 to see some of them in action.
 
@@ -121,7 +124,7 @@ You might not want to use all the features that
 Or, perhaps, you might want to redesign the user experience
 without having to reinvent the wheel.
 Maybe, you're in pursuit of building a UI on top of the widget.
-For all of those use cases, we provide a 
+For all of those use cases, we provide a
 [JavaScript API](https://uploadcare.com/documentation/javascript_api/).
 Feel free to control the default widget with it,
 or make use of its standalone components that
