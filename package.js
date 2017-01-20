@@ -2,7 +2,7 @@ Npm.depends({'uploadcare-widget': '2.10.3'})
 
 Package.describe({
 	name: 'uploadcare:uploadcare-widget',
-	version: '1.1.2',
+	version: '1.1.3',
 	summary: 'The official Meteor package for the Uploadcare widget',
 	git: 'https://github.com/uploadcare/meteor-uploadcare-widget.git',
 	documentation: 'README.md',
