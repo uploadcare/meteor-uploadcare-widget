@@ -1,0 +1,24 @@
+name: checks
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '6'
+      - uses: meteorengineer/setup-meteor@v1
+        with:
+          meteor-release: '1.4.2.3'
+      - name: Run test
+        run: meteor test-packages --once
+        env:
+          NODE_TLS_REJECT_UNAUTHORIZED: 0
+          TEST_BROWSER_DRIVER: phantomjs

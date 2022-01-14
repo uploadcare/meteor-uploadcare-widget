@@ -1,6 +1,6 @@
 # meteor-uploadcare-widget
 
-[![Build Status](https://travis-ci.org/uploadcare/meteor-uploadcare-widget.svg?branch=master)](https://travis-ci.org/uploadcare/meteor-uploadcare-widget)
+[![Build Status](https://github.com/uploadcare/meteor-uploadcare-widget/actions/workflows/checks.yml/badge.svg)](https://github.com/uploadcare/meteor-uploadcare-widget/actions/workflows/checks.yml)
 
 The official Meteor package for the
 [Uploadcare widget](https://uploadcare.com/documentation/widget/).
